@@ -20,7 +20,7 @@ $(function () {
 
   saveButton.on("click", function (event) {
     event.preventDefault();
-
+    
     var value = $(this).siblings(".description").val()
     var key = $(this).parent().attr("id")
     localStorage.setItem(key, JSON.stringify(value))
